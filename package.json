@@ -14,7 +14,7 @@
     "axios": "^0.18.0",
     "better-scroll": "^1.15.2",
     "fastclick": "^1.0.6",
-    "jquery": "^2.2.1",
+    "jquery": "^3.4.1",
     "vue": "^2.5.2",
     "vue-pull-to": "^0.1.8",
     "vue-router": "^3.0.1",

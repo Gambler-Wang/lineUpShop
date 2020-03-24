@@ -1,7 +1,10 @@
 <template>
   <group title="菜单">
-    <cell is-link link="surverStep">
-      公司人员登录
+    <cell is-link link="/lineUpShop/home">
+      来排队首页
+    </cell>
+    <cell is-link link="/lineUpShopServe/businessEntry">
+      商家入驻申请
     </cell>
   </group>
 </template>
@@ -10,7 +13,7 @@
   import {Cell, Group} from 'vux';
 
   export default {
-    name: 'squareIndex',
+    name: 'navList',
     components: {
       Group,
       Cell,

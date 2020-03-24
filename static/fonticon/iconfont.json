@@ -1,0 +1,65 @@
+{
+  "id": "1624520",
+  "name": "疫情统计",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "疫情统计",
+  "glyphs": [
+    {
+      "icon_id": "9620745",
+      "name": "dn",
+      "font_class": "dn",
+      "unicode": "d0062",
+      "unicode_decimal": 852066
+    },
+    {
+      "icon_id": "4933146",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "9608065",
+      "name": "return",
+      "font_class": "icon-return",
+      "unicode": "d0110",
+      "unicode_decimal": 852240
+    },
+    {
+      "icon_id": "9608072",
+      "name": "bignext",
+      "font_class": "icon-bignext",
+      "unicode": "d0109",
+      "unicode_decimal": 852233
+    },
+    {
+      "icon_id": "979778",
+      "name": "报表",
+      "font_class": "baobiao",
+      "unicode": "e736",
+      "unicode_decimal": 59190
+    },
+    {
+      "icon_id": "1032410",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "9638199",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "d0020",
+      "unicode_decimal": 852000
+    },
+    {
+      "icon_id": "9638207",
+      "name": "left",
+      "font_class": "left",
+      "unicode": "d0019",
+      "unicode_decimal": 851993
+    }
+  ]
+}

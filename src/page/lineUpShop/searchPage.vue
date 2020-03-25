@@ -32,39 +32,7 @@
 					</div>
 				</section>
 				<section class="search-content" v-show="showSearchContent">
-					<div>
-						<i class="iconfont">&#xd0084;</i>
-						<h5>
-							<span>10元快剪</span>
-							<span>当代国际花园</span>
-						</h5>
-						<p>
-							<i class="iconfont">&#xe701;</i>
-							<span>23人</span>
-						</p>
-						<p>
-							<span>美发</span>
-							<span> | </span>
-							<span>光谷大道87号</span>
-						</p>
-					</div>
-					<div>
-						<i class="iconfont">&#xd0084;</i>
-						<h5>
-							<span>10元快剪</span>
-							<span>当代国际花园</span>
-						</h5>
-						<p>
-							<i class="iconfont">&#xe701;</i>
-							<span>23人</span>
-						</p>
-						<p>
-							<span>美发</span>
-							<span> | </span>
-							<span>光谷大道87号</span>
-						</p>
-					</div>
-					<div>
+					<div @click="$go('/lineUpShop/searchPage')">
 						<i class="iconfont">&#xd0084;</i>
 						<h5>
 							<span>10元快剪</span>
@@ -122,6 +90,7 @@
 				display: flex;
 				align-items: center;
 				z-index: 1;
+				background-color: #fff;
         & .search-input{
 					width: 591px;
 					height: 78px;

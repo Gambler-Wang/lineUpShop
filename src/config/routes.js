@@ -29,6 +29,14 @@ export default [
     },
     component: () => import('@/page/lineUpShop/searchPage')
   },
+  {
+    path: '/lineUpShop/searchFindList',
+    name: '来排队',
+    meta:{
+      title:'来排队'
+    },
+    component: () => import('@/page/lineUpShop/searchFindList')
+  },
 
   //卖家服务
   {

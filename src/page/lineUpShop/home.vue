@@ -8,7 +8,7 @@
           </span>
           <i class="iconfont">&#xe6b2;</i>
         </div>
-        <div class="search-box">
+        <div class="search-box" @click="$go('/lineUpShop/searchPage')">
           <div>
             <i class="iconfont">&#xd0044;</i>
             搜服务、商圈、小区、园区，立即取号
@@ -53,93 +53,6 @@
           </div>
         </section>
         <section class="tab-container">
-          <div>
-            <img src="../../assets/img/default-goods-icon .jpg" alt="">
-            <div>
-              <h5>造型，节假日通用(椰岛造型)</h5>
-              <div class="shop-info">
-                <div>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                </div>
-                <span>32人</span>
-                <p>
-                  <i class="iconfont">&#xd0084;</i>
-                  <span>200km</span>
-                </p>
-              </div>
-              <div class="shop-address">
-                <p>金地格林东郡</p>
-                <p>光谷天地商圈</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img src="../../assets/img/default-goods-icon .jpg" alt="">
-            <div>
-              <h5>造型，节假日通用(椰岛造型)</h5>
-              <div class="shop-info">
-                <div>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                </div>
-                <span>32人</span>
-                <p>
-                  <i class="iconfont">&#xd0084;</i>
-                  <span>200km</span>
-                </p>
-              </div>
-              <div class="shop-address">
-                <p>金地格林东郡</p>
-                <p>光谷天地商圈</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img src="../../assets/img/default-goods-icon .jpg" alt="">
-            <div>
-              <h5>造型，节假日通用(椰岛造型)</h5>
-              <div class="shop-info">
-                <div>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                  <i class="iconfont">&#xe701;</i>
-                </div>
-                <span>32人</span>
-                <p>
-                  <i class="iconfont">&#xd0084;</i>
-                  <span>200km</span>
-                </p>
-              </div>
-              <div class="shop-address">
-                <p>金地格林东郡</p>
-                <p>光谷天地商圈</p>
-              </div>
-            </div>
-          </div>
           <div>
             <img src="../../assets/img/default-goods-icon .jpg" alt="">
             <div>

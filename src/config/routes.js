@@ -21,6 +21,14 @@ export default [
     },
     component: () => import('@/page/lineUpShop/home')
   },
+  {
+    path: '/lineUpShop/searchPage',
+    name: '搜索',
+    meta:{
+      title:'搜索'
+    },
+    component: () => import('@/page/lineUpShop/searchPage')
+  },
 
   //卖家服务
   {

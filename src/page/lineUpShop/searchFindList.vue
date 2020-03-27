@@ -11,7 +11,7 @@
 				<FilerBox />
 				<section class="goods-list">
           <div>
-            <img src="../../assets/img/default-goods-icon .jpg" alt="">
+            <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>
               <div class="shop-info">
@@ -40,7 +40,7 @@
             </div>
           </div>
           <div>
-            <img src="../../assets/img/default-goods-icon .jpg" alt="">
+            <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>
               <div class="shop-info">

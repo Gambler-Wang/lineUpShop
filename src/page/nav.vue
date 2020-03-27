@@ -6,6 +6,9 @@
     <cell is-link link="/lineUpShop/searchPage">
       搜索
     </cell>
+    <cell is-link link="/lineUpShop/goodsDetail">
+      服务详情
+    </cell>
     <cell is-link link="/lineUpShopServe/businessEntry">
       商家入驻申请
     </cell>

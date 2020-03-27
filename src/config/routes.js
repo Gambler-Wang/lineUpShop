@@ -37,7 +37,14 @@ export default [
     },
     component: () => import('@/page/lineUpShop/searchFindList')
   },
-
+  {
+    path: '/lineUpShop/goodsDetail',
+    name: '服务详情',
+    meta:{
+      title:'服务详情'
+    },
+    component: () => import('@/page/lineUpShop/goodsDetail')
+  },
   //卖家服务
   {
     path: '/lineUpShopServe/businessEntry',

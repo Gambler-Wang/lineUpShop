@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "13738749",
+      "name": "CancelOutline",
+      "font_class": "CancelOutline",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "13738760",
+      "name": "IncreaseOutline",
+      "font_class": "IncreaseOutline",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
       "icon_id": "814462",
       "name": "向上",
       "font_class": "xiangshang",

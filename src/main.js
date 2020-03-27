@@ -4,7 +4,7 @@ import Vue from 'vue';
 import FastClick from 'fastclick';
 import App from './App';
 import router from './router';
-import { Flexbox, FlexboxItem, AjaxPlugin, ToastPlugin, LoadingPlugin } from 'vux';
+import { Flexbox, FlexboxItem, AjaxPlugin, ToastPlugin, LoadingPlugin,DatetimePlugin } from 'vux';
 import {API_BASE_URL} from '@/config/app';
 import zrender from 'zrender';
 import '@/extends';
@@ -16,6 +16,7 @@ import '@/extends';
 Vue.prototype.zrender = zrender;
 Vue.use(ToastPlugin);
 Vue.use(LoadingPlugin);
+Vue.use(DatetimePlugin)
 FastClick.attach(document.body);
 
 Vue.config.productionTip = false;

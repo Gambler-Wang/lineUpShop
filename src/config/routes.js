@@ -31,7 +31,7 @@ export default [
   },
   {
     path: '/lineUpShop/searchFindList',
-    name: '来排队',
+    name: '筛选页',
     meta:{
       title:'来排队'
     },
@@ -44,6 +44,14 @@ export default [
       title:'服务详情'
     },
     component: () => import('@/page/lineUpShop/goodsDetail')
+  },
+  {
+    path: '/lineUpShop/lineUpPay',
+    name: '支付页',
+    meta:{
+      title:'排队'
+    },
+    component: () => import('@/page/lineUpShop/lineUpPay')
   },
   //卖家服务
   {

@@ -189,9 +189,29 @@ body {
       }
     }
   }
+
+  // popup头部右侧文字样式和左侧文字样式
+  .dp-header .dp-item.dp-right{
+    color: #0067FE;
+  }
+  .vux-popup-header{
+    background-color: #fff;
+    & .vux-popup-header-title{
+      // font-size: 34px;
+      color: #292929;
+    }
+    & .vux-popup-header-left{
+      // font-size: 32px;
+    }
+    & .vux-popup-header-right{
+      // font-size: 32px;
+      color: #0067FE;
+    }
+  }
 }
 input{
   -webkit-user-select:text !important;
 }
+
 
 </style>

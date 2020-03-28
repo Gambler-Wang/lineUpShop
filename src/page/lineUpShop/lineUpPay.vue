@@ -308,69 +308,56 @@ import { PopupHeader,Popup,TransferDom   } from 'vux'
         text-align: center;
       }
     }
-    
-    & .vux-popup-header{
+  }
+</style>
+<style lang="less">
+  .hairer-list-popup{
+    padding: 20px 30px;
+    &>.item{
+      display: flex;
+      height: 140px;
       background-color: #fff;
-      & .vux-popup-header-title{
-        font-size: 34px;
-        color: #292929;
+      align-items: center;
+      padding: 0 30px;
+      margin-bottom: 20px;
+      position: relative;
+      &>img{
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        margin-right: 20px;
       }
-      & .vux-popup-header-left{
-        font-size: 32px;
+      &>div{
+        h5{
+          height:34px;
+          font-size:34px;
+          font-weight:600;
+          color:rgba(41,41,41,1);
+          line-height:34px;
+          margin-bottom: 18px;
+        }
+        p{
+          height:24px;
+          font-size:24px;
+          font-weight:400;
+          color:rgba(153,153,153,1);
+          line-height:24px;
+        }
       }
-      & .vux-popup-header-right{
-        font-size: 32px;
-        color: #0067FE;
-      }
-    }
-    & .hairer-list-popup{
-      padding: 20px 30px;
-      &>.item{
-        display: flex;
+      &>i{
+        display: none;
+        position: absolute;
+        width: 88px;
         height: 140px;
-        background-color: #fff;
-        align-items: center;
-        padding: 0 30px;
-        margin-bottom: 20px;
-        position: relative;
-        &>img{
-          width: 88px;
-          height: 88px;
-          border-radius: 50%;
-          margin-right: 20px;
-        }
-        &>div{
-          h5{
-            height:34px;
-            font-size:34px;
-            font-weight:600;
-            color:rgba(41,41,41,1);
-            line-height:34px;
-            margin-bottom: 18px;
-          }
-          p{
-            height:24px;
-            font-size:24px;
-            font-weight:400;
-            color:rgba(153,153,153,1);
-            line-height:24px;
-          }
-        }
-        &>i{
-          display: none;
-          position: absolute;
-          width: 88px;
-          height: 140px;
-          line-height: 140px;
-          text-align: center;
-          right: 0;
-          top: 0;
-          color: #0067FE;
-          font-size: 34px;
-        }
-        &.active>i{
-          display: block;
-        }
+        line-height: 140px;
+        text-align: center;
+        right: 0;
+        top: 0;
+        color: #0067FE;
+        font-size: 34px;
+      }
+      &.active>i{
+        display: block;
       }
     }
   }

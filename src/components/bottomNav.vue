@@ -1,7 +1,7 @@
 <template>
   <section id="bottomNav">
     <tabbar>
-    <tabbar-item>
+    <tabbar-item selected link="/lineUpShop/shopHome">
         <img slot="icon" src="../assets/img/home-icon.png">
         <img slot="icon-active" src="../assets/img/home-active-icon.png">
         <span slot="label">首页</span>
@@ -11,7 +11,7 @@
         <img slot="icon-active" src="../assets/img/map-icon.png">
         <span slot="label">地图</span>
     </tabbar-item>
-    <tabbar-item selected>
+    <tabbar-item link="/lineUpShop/mineHome">
         <img slot="icon" src="../assets/img/mine-icon.png">
         <img slot="icon-active" src="../assets/img/mine-active-icon.png">
         <span slot="label">我的</span>

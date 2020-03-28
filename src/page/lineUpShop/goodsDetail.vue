@@ -192,7 +192,7 @@
                   color: #999999;
                   line-height: 33px;
                   &:nth-last-of-type(1){
-
+                    text-decoration:line-through;
                   }
                 }
               }

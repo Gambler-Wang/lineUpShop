@@ -1,6 +1,6 @@
 <template>
   <group title="菜单">
-    <cell is-link link="/lineUpShop/home">
+    <cell is-link link="/lineUpShop/shopHome">
       来排队首页
     </cell>
     <cell is-link link="/lineUpShop/searchPage">
@@ -11,6 +11,12 @@
     </cell>
     <cell is-link link="/lineUpShop/lineUpPay">
       排队支付页
+    </cell>
+    <cell is-link link="/lineUpShop/lineUpSuccess">
+      排队成功
+    </cell>
+    <cell is-link link="/lineUpShop/mineHome">
+      我的主页
     </cell>
     <cell is-link link="/lineUpShopServe/businessEntry">
       商家入驻申请

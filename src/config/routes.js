@@ -105,4 +105,12 @@ export default [
     },
     component: () => import('@/page/lineUpShopServe/businessEntry')
   },
+  {
+    path: '/lineUpShopServe/hairdresserEntry',
+    name: '发型师',
+    meta:{
+      title:'发型师'
+    },
+    component: () => import('@/page/lineUpShopServe/hairdresserEntry')
+  },
 ];

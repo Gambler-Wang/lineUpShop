@@ -21,6 +21,9 @@
     <cell is-link link="/lineUpShopServe/businessEntry">
       商家入驻申请
     </cell>
+    <cell is-link link="/lineUpShopServe/hairdresserEntry">
+      发型师
+    </cell>
   </group>
 </template>
 

@@ -35,7 +35,7 @@
               <h5>造型，节假日通用</h5>
             </div>
             <div class="line-up-btn-box">
-              <div class="btn">去排队</div>
+              <div class="btn" @click="$go('/lineUpShop/lineUpPay')">去排队</div>
               <p>预约金2.00元</p>
             </div>
           </div>

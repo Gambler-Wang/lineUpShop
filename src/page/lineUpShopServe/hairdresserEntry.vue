@@ -135,9 +135,6 @@ import { XInput, Group,Cell,Calendar,XTextarea} from 'vux'
             padding-left: 20px;
             // font-size: 30px;
           }
-          & .weui-input{
-            // font-size: 30px;
-          }
         }
         & .vux-calendar{
           &::before{

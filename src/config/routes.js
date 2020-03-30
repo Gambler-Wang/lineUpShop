@@ -96,6 +96,54 @@ export default [
     },
     component: () => import('@/page/lineUpShop/lineUpSuccess')
   },
+  {
+    path: '/lineUpShop/myQueue',
+    name: '我的排队',
+    meta:{
+      title:'排队码'
+    },
+    component: () => import('@/page/lineUpShop/myQueue')
+  },
+  {
+    path: '/lineUpShop/remainEvaluate',
+    name: '待评价',
+    meta:{
+      title:'评价'
+    },
+    component: () => import('@/page/lineUpShop/remainEvaluate')
+  },
+  {
+    path: '/lineUpShop/evaluate',
+    name: '评价',
+    meta:{
+      title:'评价'
+    },
+    component: () => import('@/page/lineUpShop/evaluate')
+  },
+  {
+    path: '/lineUpShop/collection',
+    name: '收藏',
+    meta:{
+      title:'收藏'
+    },
+    component: () => import('@/page/lineUpShop/collection')
+  },
+  {
+    path: '/lineUpShop/feedback',
+    name: '意见反馈',
+    meta:{
+      title:'意见反馈'
+    },
+    component: () => import('@/page/lineUpShop/feedback')
+  },
+  {
+    path: '/lineUpShop/setting',
+    name: '设置',
+    meta:{
+      title:'设置'
+    },
+    component: () => import('@/page/lineUpShop/setting')
+  },
   //卖家服务
   {
     path: '/lineUpShopServe/businessEntry',
@@ -113,4 +161,44 @@ export default [
     },
     component: () => import('@/page/lineUpShopServe/hairdresserEntry')
   },
+  {
+    path: '/lineUpShopServe/serviceList',
+    name: '服务列表',
+    meta:{
+      title:'服务列表'
+    },
+    component: () => import('@/page/lineUpShopServe/serviceList')
+  },
+  {
+    path: '/lineUpShopServe/addService',
+    name: '新增服务',
+    meta:{
+      title:'1/2 服务信息编辑'
+    },
+    component: () => import('@/page/lineUpShopServe/addService')
+  },
+  {
+    path: '/lineUpShopServe/setUpInLine',
+    name: '排队设置',
+    meta:{
+      title:'2/2 排队设置'
+    },
+    component: () => import('@/page/lineUpShopServe/setUpInLine')
+  },
+  {
+    path: '/lineUpShopServe/callManageMent',
+    name: '叫号管理',
+    meta:{
+      title:'叫号管理'
+    },
+    component: () => import('@/page/lineUpShopServe/callManageMent')
+  },
+  {
+    path: '/lineUpShopServe/callDetail',
+    name: '叫号详情',
+    meta:{
+      title:'叫号详情'
+    },
+    component: () => import('@/page/lineUpShopServe/callDetail')
+  }
 ];

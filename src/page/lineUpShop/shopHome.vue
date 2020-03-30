@@ -16,19 +16,19 @@
         </div>
       </section>
       <section class="nav">
-        <div class="item">
+        <div class="item" @click="$go('/lineUpShop/searchFindList')">
           <img src="../../assets/img/hair-icon.png" alt="">
           <p>美容美发</p>
         </div>
-        <div class="item">
+        <div class="item" @click="$go('/lineUpShop/searchFindList')">
           <img src="../../assets/img/pet-icon.png" alt="">
           <p>宠物医院</p>
         </div>
-        <div class="item">
+        <div class="item" @click="$go('/lineUpShop/searchFindList')">
           <img src="../../assets/img/repair-car-icon.png" alt="">
           <p>汽车维修</p>
         </div>
-        <div class="item">
+        <div class="item" @click="$go('/lineUpShop/searchFindList')">
           <img src="../../assets/img/wash-car-icon.png" alt="">
           <p>洗车</p>
         </div>
@@ -41,7 +41,7 @@
             </p>
             <p>商家赚取利益</p>
           </div>
-          <div class="busjoin-btn">
+          <div class="busjoin-btn" @click="$go('/lineUpShopServe/businessEntry')">
             我要入驻
           </div>
         </div>
@@ -53,7 +53,7 @@
           </div>
         </section>
         <section class="tab-container">
-          <div>
+          <div @click="$go('/lineUpShop/goodsDetail')">
             <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>
@@ -82,7 +82,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div @click="$go('/lineUpShop/goodsDetail')">
             <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>
@@ -111,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div @click="$go('/lineUpShop/goodsDetail')">
             <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>
@@ -140,7 +140,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div @click="$go('/lineUpShop/goodsDetail')">
             <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>
@@ -169,7 +169,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div @click="$go('/lineUpShop/goodsDetail')">
             <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>
@@ -198,7 +198,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div @click="$go('/lineUpShop/goodsDetail')">
             <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>

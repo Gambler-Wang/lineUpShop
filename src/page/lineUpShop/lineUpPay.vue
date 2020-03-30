@@ -61,7 +61,7 @@
         <p>1、到店时间超过预约时间段结束时间需支付10%的违约。</p>  
         <p>2、店铺提供服务超过时间段，服务费用8折优惠。</p>  
       </div>
-      <div class="pay-btn">
+      <div class="pay-btn" @click="$go('/lineUpShop/lineUpSuccess')">
         支付预约金2.00元，排队
       </div>
     </section>

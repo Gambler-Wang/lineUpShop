@@ -10,7 +10,7 @@
         </section>
 				<FilerBox />
 				<section class="goods-list">
-          <div>
+          <div @click="$go('/lineUpShop/goodsDetail')">
             <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>
@@ -39,7 +39,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div @click="$go('/lineUpShop/goodsDetail')">
             <img src="../../assets/img/default-goods-icon.jpg" alt="">
             <div>
               <h5>造型，节假日通用(椰岛造型)</h5>

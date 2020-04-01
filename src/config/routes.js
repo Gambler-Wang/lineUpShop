@@ -13,49 +13,49 @@ export default [
     component: () => import('@/page/surveySystem')
   },
   // 买家
-  {
-    path: '/lineUpShop/home',
-    name: '首页',
-    meta:{
-      title:'来排队'
-    },
-    component: () => import('@/page/lineUpShop/home'),
-    redirect:'/lineUpShop/shopHome',
-    children:[
-      {
-        path:'/lineUpShop/shopHome',
-        name:'shopHome',
-        meta:{
-          title:'来排队'
-        },
-        component: () => import('@/page/lineUpShop/shopHome')
-      },
-      {
-        path: '/lineUpShop/mineHome',
-        name: '我的主页',
-        meta:{
-          title:'我的'
-        },
-        component: () => import('@/page/lineUpShop/mineHome')
-      },
-    ]
-  },
   // {
-  //   path: '/lineUpShop/shopHome',
-  //   name: '来排队',
+  //   path: '/lineUpShop/home',
+  //   name: '首页',
   //   meta:{
   //     title:'来排队'
   //   },
-  //   component: () => import('@/page/lineUpShop/shopHome')
+  //   component: () => import('@/page/lineUpShop/home'),
+  //   redirect:'/lineUpShop/shopHome',
+  //   children:[
+  //     {
+  //       path: '/lineUpShop/shopHome',
+  //       name: '来排队',
+  //       meta:{
+  //         title:'来排队'
+  //       },
+  //       component: () => import('@/page/lineUpShop/shopHome')
+  //     },
+  //     {
+  //       path: '/lineUpShop/mineHome',
+  //       name: '我的主页',
+  //       meta:{
+  //         title:'我的'
+  //       },
+  //       component: () => import('@/page/lineUpShop/mineHome')
+  //     },
+  //   ]
   // },
-  // {
-  //   path: '/lineUpShop/mineHome',
-  //   name: '我的主页',
-  //   meta:{
-  //     title:'我的'
-  //   },
-  //   component: () => import('@/page/lineUpShop/mineHome')
-  // },
+  {
+    path:'/lineUpShop/shopHome',
+    name:'shopHome',
+    meta:{
+      title:'来排队'
+    },
+    component: () => import('@/page/lineUpShop/shopHome')
+  },
+  {
+    path: '/lineUpShop/mineHome',
+    name: '我的主页',
+    meta:{
+      title:'我的'
+    },
+    component: () => import('@/page/lineUpShop/mineHome')
+  },
   {
     path: '/lineUpShop/searchPage',
     name: '搜索',

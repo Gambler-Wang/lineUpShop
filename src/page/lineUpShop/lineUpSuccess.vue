@@ -122,6 +122,7 @@
         color: #666666;
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 100px;
       }
     }
   }

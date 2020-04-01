@@ -7,17 +7,17 @@
           <h5>Luck</h5>
           <p>武汉  女</p>
         </div>
-        <i class="iconfont" @click="$go('/lineUpShop/setting')">&#xd0128;</i>
+        <i class="iconfont" @click="navigate('/lineUpShop/setting')">&#xd0128;</i>
       </div>
       <div class="card">
-        <div  @click="$go('/lineUpShop/myQueue')">
+        <div  @click="navigate('/lineUpShop/myQueue')">
           <img src="../../assets/img/line-up-num-icon.png" alt="">
           <div>
             <h5>排队码</h5>
             <p>1个排队码可使用</p>
           </div>
         </div>
-        <div @click="$go('/lineUpShop/remainEvaluate')">
+        <div @click="navigate('/lineUpShop/remainEvaluate')">
           <img src="../../assets/img/line-up-comment-icon.png" alt="">
           <div>
             <h5>去评价</h5>
@@ -26,15 +26,15 @@
         </div>
       </div>
       <ul>
-        <li @click="$go('/lineUpShop/collection')">
+        <li @click="navigate('/lineUpShop/collection')">
           <h5>我的收藏</h5>
           <i class="iconfont">&#xd0109; </i>
         </li>
-        <li @click="$go('/lineUpShop/feedback')">
+        <li @click="navigate('/lineUpShop/feedback')">
           <h5>我要投诉</h5>
           <i class="iconfont">&#xd0109; </i>
         </li>
-        <li @click="$go('/lineUpShop/feedback')">
+        <li @click="navigate('/lineUpShop/feedback')">
           <h5>意见反馈</h5>
           <i class="iconfont">&#xd0109; </i>
         </li>
@@ -44,6 +44,7 @@
         </li>
       </ul>
     </section>
+    <BottomNav :isMineHome="true" />
   </section>
 </template>
 
@@ -68,13 +69,15 @@
 
 <style lang="less">
   #mineHome{
-    height: 100%;
     .main{
-      height: 100%;
+      height: 100vh;
       width: 100vw;
       box-sizing: border-box;
       overflow: auto;
       background-color: #fff;
+      &.ignore{
+        padding-bottom: 53px;
+      }
       & .user-info{
         display: flex;
         padding: 30px;

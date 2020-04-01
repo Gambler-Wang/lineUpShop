@@ -29,6 +29,9 @@
         ]
       }
     },
+    created(){
+      
+    },
     methods:{
       changeTab(item){
         this.tabList.forEach(element => {

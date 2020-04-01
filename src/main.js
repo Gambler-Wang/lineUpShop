@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import FastClick from 'fastclick';
+import wx from 'weixin-js-sdk';
 import App from './App';
 import router from './router';
 import { Flexbox, FlexboxItem, AjaxPlugin, ToastPlugin, LoadingPlugin,DatetimePlugin } from 'vux';
@@ -103,7 +104,34 @@ Vue.mixin({
             // vux.$vux.toast.text(e);
           });
       });
-    }
+    },
+    
+    //H5页面js
+    navigate(pathUrl) { //控制页面跳转---小程序、公众号、非微信跳转方式 【modelName---vue路由名字】
+      this.isMiniProgram((res)=>{//判断是否是小程序页面的回调函数
+        if (res) {//小程序页面
+            wx.miniProgram.navigateTo({url: '../webview/webview?weburl=http://192.168.1.16:8080/#' + pathUrl});
+        } else {
+            this.$router.push(pathUrl);//非小程序页面使用vue路由跳转
+        }
+      })
+    },
+    isMiniProgram(callback) { //是否为小程序环境
+      //是否在微信环境
+      if (window.navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == 'micromessenger') {
+          //微信API获取当前运行环境
+          wx.miniProgram.getEnv((res) => {
+              if (res.miniprogram) {//小程序环境
+                  callback(true);
+              } else {
+                  callback(false);
+              }
+          })
+      } else {
+        callback(false);
+      }
+    },
+
   }
 });
 /* eslint-disable no-new */

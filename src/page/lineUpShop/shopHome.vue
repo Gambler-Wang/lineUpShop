@@ -230,17 +230,17 @@
         </section>
       </section>
     </section>
-    <!-- <BottomNav /> -->
+    <BottomNav :isShopHome="true" />
   </section>
 </template>
 
 <script>
-  // import BottomNav from '../../components/bottomNav';
+  import BottomNav from '../../components/bottomNav';
 
   export default {
     name: 'shopHome',
     components: {
-      // BottomNav
+      BottomNav
     },
     data(){
       return{
@@ -269,17 +269,16 @@
 
 <style lang="less">
   #shopHome{
-    height: 100%;
     .main{
-      height: 100%;
+      height: 100vh;
       width: 100vw;
       box-sizing: border-box;
       overflow: auto;
       background-color: #fff;
       padding-top: 88px;
-      // &.ignore{
-      //   padding-bottom: 53px;
-      // }
+      &.ignore{
+        padding-bottom: 53px;
+      }
       & .search-container{
         position: absolute;
         top: 0;

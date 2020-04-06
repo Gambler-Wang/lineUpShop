@@ -1,5 +1,6 @@
 <template>
   <section id="searchPage">
+    <Header title="搜索" />
     <section class="main">
         <section class="search-box">
             <div class="search-input">
@@ -32,7 +33,7 @@
 					</div>
 				</section>
 				<section class="search-content" v-show="showSearchContent">
-					<div @click="$go('/lineUpShop/searchPage')">
+					<div @click="$go('/lineUpShop/searchFindList')">
 						<i class="iconfont">&#xd0084;</i>
 						<h5>
 							<span>10元快剪</span>
@@ -54,9 +55,11 @@
 </template>
 
 <script>
+  import Header from '../../components/header';
   export default {
     name: 'searchPage',
     components: {
+      Header
       
     },
     data(){
@@ -78,10 +81,12 @@
       box-sizing: border-box;
       overflow: auto;
       background-color: #fff;
-      padding-top: 88px;
+      // padding-top: 88px;
+      padding-top: 184px;
       & .search-box{
         position: absolute;
-        top: 0;
+        top: 96px;
+        // top: 0;
         left: 0;
         width: 100vw;
         height: 88px;

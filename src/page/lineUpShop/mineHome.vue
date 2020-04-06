@@ -1,5 +1,6 @@
 <template>
   <section id="mineHome">
+    <Header title="我的" :isBack="false" />
     <section class="main">
       <div class="user-info">
         <img src="../../assets/img/default-goods-des-icon.jpg" alt="">
@@ -7,17 +8,17 @@
           <h5>Luck</h5>
           <p>武汉  女</p>
         </div>
-        <i class="iconfont" @click="navigate('/lineUpShop/setting')">&#xd0128;</i>
+        <i class="iconfont" @click="$go('/lineUpShop/setting')">&#xd0128;</i>
       </div>
       <div class="card">
-        <div  @click="navigate('/lineUpShop/myQueue')">
+        <div  @click="$go('/lineUpShop/myQueue')">
           <img src="../../assets/img/line-up-num-icon.png" alt="">
           <div>
             <h5>排队码</h5>
             <p>1个排队码可使用</p>
           </div>
         </div>
-        <div @click="navigate('/lineUpShop/remainEvaluate')">
+        <div @click="$go('/lineUpShop/remainEvaluate')">
           <img src="../../assets/img/line-up-comment-icon.png" alt="">
           <div>
             <h5>去评价</h5>
@@ -26,15 +27,15 @@
         </div>
       </div>
       <ul>
-        <li @click="navigate('/lineUpShop/collection')">
+        <li @click="$go('/lineUpShop/collection')">
           <h5>我的收藏</h5>
           <i class="iconfont">&#xd0109; </i>
         </li>
-        <li @click="navigate('/lineUpShop/feedback')">
+        <li @click="$go('/lineUpShop/feedback')">
           <h5>我要投诉</h5>
           <i class="iconfont">&#xd0109; </i>
         </li>
-        <li @click="navigate('/lineUpShop/feedback')">
+        <li @click="$go('/lineUpShop/feedback')">
           <h5>意见反馈</h5>
           <i class="iconfont">&#xd0109; </i>
         </li>
@@ -50,11 +51,13 @@
 
 <script>
   import BottomNav from '../../components/bottomNav';
+  import Header from '../../components/header';
 
   export default {
     name: 'mineHome',
     components: {
-      BottomNav
+      BottomNav,
+      Header
     },
     data(){
       return{
@@ -75,6 +78,7 @@
       box-sizing: border-box;
       overflow: auto;
       background-color: #fff;
+      padding-top: 96px;
       &.ignore{
         padding-bottom: 53px;
       }

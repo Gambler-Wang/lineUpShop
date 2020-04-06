@@ -48,7 +48,8 @@ export default {
 <style lang="less">
   #filterBox{
     position: absolute;
-    top: 88px;
+    // top: 88px;
+    top: 184px;
     left: 0;
     width: 100vw;
     height: 78px;

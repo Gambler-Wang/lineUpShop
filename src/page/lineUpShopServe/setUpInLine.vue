@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>排队设置</span>
     </div> -->
+    <Header title="排队设置" />
     <div class="section">
       <group gutter="0">
         <cell title="开启排队" is-link>
@@ -80,7 +81,8 @@
 </template>
 
 <script>
-  import {XTextarea, XInput, Group, Cell, Popup, Toast, TransferDom} from 'vux'
+  import {XTextarea, XInput, Group, Cell, Popup, Toast, TransferDom} from 'vux';
+  import Header from '../../components/header';
 
   export default {
     name: "setUpInLine",
@@ -93,7 +95,8 @@
       Group,
       Cell,
       Popup,
-      Toast
+      Toast,
+      Header
     },
     data() {
       return {
@@ -193,6 +196,7 @@
     min-height: 100vh;
     box-sizing: border-box;
     padding-bottom: 200px;
+    padding-top: 96px;
     .nav {
       height: 88px;
       font-size: 34px;

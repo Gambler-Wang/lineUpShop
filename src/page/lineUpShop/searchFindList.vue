@@ -1,5 +1,6 @@
 <template>
   <section id="searchFindList">
+    <Header title="排队买" />
     <section class="main">
         <section class="search-box">
             <div class="search-input">
@@ -75,10 +76,12 @@
 
 <script>
   import FilerBox from '../../components/filter';
+  import Header from '../../components/header';
   export default {
     name: 'searchFindList',
     components: {
-      FilerBox
+      FilerBox,
+      Header
     },
     data(){
       return{
@@ -99,10 +102,12 @@
       box-sizing: border-box;
       overflow: auto;
       background-color: #fff;
-      padding-top: 166px;
+			// padding-top: 166px;
+			padding-top: 262px;
       & .search-box{
         position: absolute;
-        top: 0;
+				// top: 0;
+				top: 96px;
         left: 0;
         width: 100vw;
         height: 88px;

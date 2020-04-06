@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>收藏</span>
     </div> -->
+    <Header title="我的收藏" />
     <div class="section">
       <div class="card" v-for="i of 4" :key="i" @click="$go('/lineUpShop/goodsDetail')">
         <div class="img"><img src="" alt=""></div>
@@ -36,8 +37,12 @@
 </template>
 
 <script>
+  import Header from '../../components/header';
   export default {
     name: "remainEvaluate",
+    components: {
+      Header
+    },
     data() {
       return {}
     }
@@ -48,6 +53,7 @@
   .remainEvaluate {
     font-family:PingFangSC-Regular,PingFang SC;
     font-size:26px;
+    padding-top: 96px;
     .nav {
       height:88px;
       background:rgba(255,255,255,1);

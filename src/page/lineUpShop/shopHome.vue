@@ -1,5 +1,6 @@
 <template>
   <section id="shopHome">
+    <Header title="排队买" :isBack="false" />
     <section class="main">
       <section class="search-container">
         <div class="address-box">
@@ -236,11 +237,13 @@
 
 <script>
   import BottomNav from '../../components/bottomNav';
+  import Header from '../../components/header';
 
   export default {
     name: 'shopHome',
     components: {
-      BottomNav
+      BottomNav,
+      Header
     },
     data(){
       return{
@@ -275,13 +278,15 @@
       box-sizing: border-box;
       overflow: auto;
       background-color: #fff;
-      padding-top: 88px;
+      // padding-top: 88px;
+      padding-top: 184px;
       &.ignore{
         padding-bottom: 53px;
       }
       & .search-container{
         position: absolute;
-        top: 0;
+        top: 96px;
+        // top: 0;
         width: 100%;
         height: 88px;
         line-height: 88px;

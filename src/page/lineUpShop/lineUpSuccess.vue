@@ -1,5 +1,6 @@
 <template>
   <section id="lineUpSuccess">
+    <Header title="排队成功" />
     <section class="main">
       <p>
         <i class="iconfont">&#xd0089;</i>
@@ -32,9 +33,11 @@
 </template>
 
 <script>
+  import Header from '../../components/header';
   export default {
     name: 'lineUpSuccess',
     components: {
+      Header
       
     },
     data(){
@@ -52,6 +55,7 @@
 
 <style lang="less">
   #lineUpSuccess{
+    padding-top: 96px;
     .main{
       height: 100vh;
       width: 100vw;

@@ -1,5 +1,6 @@
 <template>
   <section id="lineUpPay">
+    <Header title="排队" />
     <section class="main">
       <div class="goods-ticket">
         <img src="../../assets/img/default-goods-des-icon.jpg" alt="">
@@ -89,14 +90,16 @@
   </section>
 </template>
 <script>
-import { PopupHeader,Popup,TransferDom   } from 'vux'
+import { PopupHeader,Popup,TransferDom   } from 'vux';
+  import Header from '../../components/header';
   export default {
     name: 'lineUpPay',
     directives: {
       TransferDom
     },
     components: {
-      PopupHeader,Popup 
+      PopupHeader,Popup,
+      Header
     },
     data(){
       return{
@@ -164,6 +167,7 @@ import { PopupHeader,Popup,TransferDom   } from 'vux'
 
 <style lang="less">
   #lineUpPay{
+    padding-top: 96px;
     .main{
       height: 100vh;
       width: 100vw;

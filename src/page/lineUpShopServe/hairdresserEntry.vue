@@ -1,5 +1,6 @@
 <template>
   <section id="hairdresserEntry">
+    <Header title="发型师" />
     <section class="main">
       <h3>椰岛造型(广谷广场店)</h3>
       <div class="item header-icon-box">
@@ -57,11 +58,12 @@
 </template>
 
 <script>
-import { XInput, Group,Cell,Calendar,XTextarea} from 'vux'
+import { XInput, Group,Cell,Calendar,XTextarea} from 'vux';
+  import Header from '../../components/header';
   export default {
     name: 'hairdresserEntry',
     components: {
-      XInput, Group,Cell,Calendar,XTextarea
+      XInput, Group,Cell,Calendar,XTextarea,Header
     },
     data(){
       return{
@@ -88,6 +90,7 @@ import { XInput, Group,Cell,Calendar,XTextarea} from 'vux'
       box-sizing: border-box;
       overflow: auto;
       background-color: #fff;
+      padding-top: 96px;
       &>h3{
         height:88px;
         line-height: 88px;

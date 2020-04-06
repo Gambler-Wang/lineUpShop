@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>服务队列</span>
     </div> -->
+    <Header title="服务队列" />
     <div class="section">
       <div class="card" v-for="i of 4" :key="i">
         <div class="img"><img src="" alt=""></div>
@@ -45,11 +46,13 @@
 
 <script>
   import {Popover} from 'vux';
+  import Header from '../../components/header';
 
   export default {
     name: "service-list",
     components: {
-      Popover
+      Popover,
+      Header
     },
     data() {
       return {
@@ -59,37 +62,11 @@
   }
 </script>
 <style  lang="less">
-  body .vux-popover {
-    left: 641px !important;
-  }
-  .popOver {
-    position: absolute;
-    left: -411px;
-    top: -60px;
-    width: 411px;
-    height: 120px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-  }
-  .popoverLfet {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    div {
-      flex: 1;
-      width: 33.33%;
-      font-size: 24px;
-    }
-  }
-  .vux-popover {
-    left: 80.333vw!important;
-  }
   .serviceList {
     font-size: 34px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
+    padding-top: 96px;
     .nav {
       height: 88px;
       font-size: 34px;
@@ -177,5 +154,33 @@
         }
       }
     }
+  }
+
+  body .vux-popover {
+    left: 641px !important;
+  }
+  .popOver {
+    position: absolute;
+    left: -411px;
+    top: -60px;
+    width: 411px;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  }
+  .popoverLfet {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    div {
+      flex: 1;
+      width: 33.33%;
+      font-size: 24px;
+    }
+  }
+  .vux-popover {
+    left: 80.333vw!important;
   }
 </style>

@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>叫号管理</span>
     </div> -->
+    <Header title="叫号管理" />
     <div class="section">
       <div class="card">
         <div class="row top" @click="$router.push({path:'/lineUpShopServe/callDetail'})">
@@ -50,12 +51,13 @@
 
 <script>
   import {Cell, Group} from 'vux';
+  import Header from '../../components/header';
 
   export default {
     name: "callManagement",
     components: {
       Group,
-      Cell
+      Cell,Header
     },
     data() {
       return {
@@ -70,6 +72,7 @@
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color:rgba(51,51,51,1);
+    padding-top: 96px;
     .nav {
       height: 88px;
       font-size: 34px;

@@ -1,5 +1,6 @@
 <template>
   <section id="hairdresserEntry">
+    <Header title="商家入驻" />
     <section class="main">
       <div class="top-column">
         <div>
@@ -145,11 +146,12 @@
 </template>
 
 <script>
-import { XInput, Group,Cell,Calendar,XTextarea} from 'vux'
+import { XInput, Group,Cell,Calendar,XTextarea} from 'vux';
+import Header from '../../components/header';
   export default {
     name: 'hairdresserEntry',
     components: {
-      XInput, Group,Cell,Calendar,XTextarea
+      XInput, Group,Cell,Calendar,XTextarea,Header
     },
     data(){
       return{
@@ -189,6 +191,7 @@ import { XInput, Group,Cell,Calendar,XTextarea} from 'vux'
       overflow: auto;
       background-color: #D45050;
       position: relative;
+      padding-top: 96px;
       &>.top-column{
         height: 150px;
         display: flex;
@@ -220,7 +223,8 @@ import { XInput, Group,Cell,Calendar,XTextarea} from 'vux'
       }
       &>.form-content{
         position:absolute;
-        top: 150px;
+        // top: 150px;
+        top: 246px;
         left: 0;
         width: 100%;
         height: auto;

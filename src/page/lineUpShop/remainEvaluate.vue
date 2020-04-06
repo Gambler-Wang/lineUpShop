@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>评价</span>
     </div> -->
+    <Header title="去评价" />
     <div class="section">
       <div class="card">
         <div class="title">
@@ -23,8 +24,12 @@
 </template>
 
 <script>
+  import Header from '../../components/header';
   export default {
     name: "remainEvaluate",
+    components: {
+      Header
+    },
     data() {
       return {}
     }
@@ -35,6 +40,7 @@
   .remainEvaluate {
     font-family:PingFangSC-Regular,PingFang SC;
     font-size:26px;
+    padding-top: 96px;
     .nav {
       height:88px;
       background:rgba(255,255,255,1);

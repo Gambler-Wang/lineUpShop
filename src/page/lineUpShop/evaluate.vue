@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>评价</span>
     </div> -->
+    <Header title="评价" />
     <div class="section">
       <div class="title">造型，节假日通用【椰岛造型】</div>
       <div class="xingxing">总体&nbsp;&nbsp;
@@ -30,11 +31,12 @@
 </template>
 
 <script>
-  import { XTextarea } from 'vux'
+  import { XTextarea } from 'vux';
+  import Header from '../../components/header';
   export default {
     name: "evaluate",
     components: {
-      XTextarea
+      XTextarea,Header
     },
     data() {
       return {}
@@ -50,6 +52,7 @@
     background:rgba(255,255,255,1);
     min-height: 100vh;
     box-sizing: border-box;
+    padding-top: 96px;
     .nav {
       height:88px;
       background:rgba(255,255,255,1);

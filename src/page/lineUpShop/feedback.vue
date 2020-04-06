@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>意见反馈</span>
     </div> -->
+    <Header title="意见反馈" />
     <div class="section">
       <div class="title">反馈内容</div>
       <div class="text">
@@ -28,13 +29,14 @@
 </template>
 
 <script>
-  import { XTextarea, XInput, Group} from 'vux'
+  import { XTextarea, XInput, Group} from 'vux';
+  import Header from '../../components/header';
   export default {
     name: "feedback",
     components: {
       XTextarea,
       XInput,
-      Group,
+      Group,Header
     },
     data() {
       return {}
@@ -50,6 +52,7 @@
     background:rgba(255,255,255,1);
     min-height: 100vh;
     box-sizing: border-box;
+    padding-top: 96px;
     .nav {
       height:88px;
       background:rgba(255,255,255,1);

@@ -1,9 +1,6 @@
 <template>
   <div class="setting">
-    <!-- <div class="nav">
-      <span class="iconfont iconleft left"></span>
-      <span>设置</span>
-    </div> -->
+    <Header title="设置" />
     <div class="section">
       <group gutter="0">
         <cell  title="头像" is-link >
@@ -27,11 +24,13 @@
 
 <script>
   import {Cell, Group} from 'vux';
+  import Header from '../../components/header';
   export default {
     name: "setting",
     components: {
       Group,
-      Cell
+      Cell,
+      Header
     },
     data() {
       return {}
@@ -44,6 +43,7 @@
     font-family:PingFangSC-Regular,PingFang SC;
     font-size:26px;
     overflow: hidden;
+    padding-top: 96px;
     
     .red {
       color:rgba(212,80,80,1);

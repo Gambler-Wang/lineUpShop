@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>服务信息编辑</span>
     </div> -->
+    <Header title="服务信息编辑" />
     <div class="section">
       <!--<div class="title">反馈内容</div>-->
       <div class="text">
@@ -45,6 +46,7 @@
 </template>
 
 <script>
+  import Header from '../../components/header';
   import { XTextarea, XInput, Group, Cell} from 'vux'
   export default {
     name: "addService",
@@ -52,7 +54,8 @@
       XTextarea,
       XInput,
       Group,
-      Cell
+      Cell,
+      Header
     },
     data() {
       return {}
@@ -67,6 +70,7 @@
     font-weight:400;
     color:rgba(41,41,41,1);
     line-height:48px;
+    padding-top: 96px;
     .nav {
       height:88px;
       font-size:34px;

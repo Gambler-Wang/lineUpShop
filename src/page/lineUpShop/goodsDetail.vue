@@ -1,5 +1,6 @@
 <template>
   <section id="goodsDetail">
+    <Header title="商品详情" />
     <section class="main">
         <div class="goods-view">
           <div class="img-box">
@@ -115,9 +116,11 @@
 </template>
 
 <script>
+  import Header from '../../components/header';
   export default {
     name: 'goodsDetail',
     components: {
+      Header
       
     },
     data(){
@@ -133,6 +136,7 @@
 
 <style lang="less">
   #goodsDetail{
+    padding-top: 96px;
     .main{
       height: 100vh;
       width: 100vw;

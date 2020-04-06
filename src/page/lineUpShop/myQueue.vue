@@ -4,6 +4,7 @@
       <span class="iconfont iconleft left"></span>
       <span>排队码</span>
     </div> -->
+    <Header title="排队码" />
     <div class="section">
       <div class="card">
         <div class="title">
@@ -53,8 +54,12 @@
 </template>
 
 <script>
+  import Header from '../../components/header';
   export default {
     name: "myQueue",
+    components: {
+      Header
+    },
     data() {
       return {}
     }
@@ -65,6 +70,7 @@
   .myQueue {
     font-family:PingFangSC-Regular,PingFang SC;
     font-size:26px;
+    padding-top: 96px;
     .red {
       color:rgba(212,80,80,1);
     }

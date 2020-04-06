@@ -7,7 +7,7 @@
     <div class="section">
       <!--<div class="title">反馈内容</div>-->
       <div class="text">
-        <x-textarea class="textarea" placeholder="" name=""  id="" cols="30" rows="3"></x-textarea>
+        <x-textarea class="textarea" placeholder="" name=""  id="" :cols="30" :rows="3"></x-textarea>
       </div>
       <div class="uploadBox">
         <span class="upload">
@@ -16,10 +16,10 @@
         </span>
       </div>
       <group title="" gutter="10px">
-        <x-input title="原价" placeholder="服务划线价" novalidate :icon-type="iconType" :show-clear="false" @on-blur="onBlur" placeholder-align="right"></x-input>
+        <x-input title="原价" placeholder="服务划线价" novalidate :show-clear="false" @on-blur="onBlur" placeholder-align="right"></x-input>
       </group>
       <group title="" gutter="0">
-        <x-input title="活动价" placeholder="服务实际销售价格" novalidate :icon-type="iconType" :show-clear="false" @on-blur="onBlur" placeholder-align="right"></x-input>
+        <x-input title="活动价" placeholder="服务实际销售价格" novalidate :show-clear="false" @on-blur="onBlur" placeholder-align="right"></x-input>
       </group>
       <div class="materials">
         <div class="title">材料/工具(非必填)</div>
@@ -56,6 +56,11 @@
     },
     data() {
       return {}
+    },
+    methods:{
+      onBlur(){
+        
+      }
     }
   }
 </script>
